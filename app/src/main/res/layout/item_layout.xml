@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ImageView
+
+       android:layout_margin="100dp"
+        android:id="@+id/image_src"
+      app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:src="@drawable/rasm1_193"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <TextView
+        android:text="nimadir"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_src"
+        app:layout_constraintBottom_toTopOf="@id/text_title2"
+        android:id="@+id/text_title"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:text="@string/tarif"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_src"
+        android:id="@+id/text_title2"
+
+     android:paddingHorizontal="30sp"
+        android:layout_marginBottom="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
